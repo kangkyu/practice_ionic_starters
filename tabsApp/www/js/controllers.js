@@ -8,6 +8,9 @@ angular.module('starter.controllers', [])
     Chats.remove(chat);
   }
 })
+.controller('TestCtrl', function($scope){
+  $scope.testMessage = "message!";
+})
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
